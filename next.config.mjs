@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+export default {
+    images: {
+        domains: [
+            'sdmntpraustraliaeast.oaiusercontent.com',
+            'images.unsplash.com',
+            'sdmntpreastus.oaiusercontent.com',
+            'sdmntprpolandcentral.oaiusercontent.com',
+        ],
+    },
+};

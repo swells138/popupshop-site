@@ -1,103 +1,87 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="min-h-screen bg-white text-gray-800 font-sans">
+      {/* Header */}
+      <header className="flex justify-between items-center px-6 py-4 border-b shadow-sm">
+        <h1 className="text-2xl font-bold">PopUp Trinkets</h1>
+        <nav className="space-x-4">
+          <Link href="#shop" className="hover:underline">Shop</Link>
+          <Link href="#events" className="hover:underline">Events</Link>
+          <Link href="#about" className="hover:underline">About</Link>
+          <Link href="#contact" className="hover:underline">Contact</Link>
+        </nav>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Hero Section */}
+      <section className="text-center py-20 bg-amber-100">
+        <h2 className="text-4xl font-extrabold mb-4">Handmade Trinkets from the Heart</h2>
+        <p className="text-lg text-gray-600 mb-6">One-of-a-kind finds, made with love and popping up near you.</p>
+        <a href="#shop" className="bg-amber-400 hover:bg-amber-500 text-white px-6 py-3 rounded-full font-semibold">See Products</a>
+      </section>
+
+      {/* Product Section */}
+      <section id="shop" className="py-16 px-6">
+        <h3 className="text-3xl font-bold mb-8 text-center">Featured Items</h3>
+        <div className="grid md:grid-cols-3 gap-8">
+
+          <div className="border rounded-lg shadow p-4 text-center">
+            <Image src="https://sdmntpreastus.oaiusercontent.com/files/00000000-601c-61f9-807e-e1aaddd12a97/raw?se=2025-07-23T15%3A42%3A48Z&sp=r&sv=2024-08-04&sr=b&scid=70024f8c-e341-5ac8-8fdd-73d742d28b08&skoid=5c72dd08-68ae-4091-b4e1-40ccec0693ae&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-22T23%3A28%3A37Z&ske=2025-07-23T23%3A28%3A37Z&sks=b&skv=2024-08-04&sig=O0Wp54vMaz%2B24E6TF99lTEjFaQcjvf5arj5zNAXogSg%3D" alt={`Item 1`} width={300} height={300} className="mx-auto mb-4" />
+            <h4 className="text-xl font-semibold">Item 1</h4>
+            <p className="text-gray-600">Short description here.</p>
+            <p className="mt-2 font-bold">$15.00</p>
+          </div>
+          <div className="border rounded-lg shadow p-4 text-center">
+            <Image src="https://sdmntpraustraliaeast.oaiusercontent.com/files/00000000-75b8-61fa-bf03-a74749dcc6ab/raw?se=2025-07-23T15%3A35%3A56Z&sp=r&sv=2024-08-04&sr=b&scid=0425c67a-f8ff-51a8-96ba-2d60bcbede4d&skoid=5c72dd08-68ae-4091-b4e1-40ccec0693ae&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-22T23%3A12%3A51Z&ske=2025-07-23T23%3A12%3A51Z&sks=b&skv=2024-08-04&sig=%2BCf7ON3eQ3/C8hTgGqMp27/VoVZm4dyKdSATAGQve/g%3D" alt={`Item 2`} width={300} height={300} className="mx-auto mb-4" />
+            <h4 className="text-xl font-semibold">Item 2</h4>
+            <p className="text-gray-600">Short description here.</p>
+            <p className="mt-2 font-bold">$15.00</p>
+          </div>
+          <div className="border rounded-lg shadow p-4 text-center">
+            <Image src="https://sdmntprpolandcentral.oaiusercontent.com/files/00000000-dc28-620a-9bb2-2c79115d4b9a/raw?se=2025-07-23T15%3A47%3A57Z&sp=r&sv=2024-08-04&sr=b&scid=e9993857-950e-5c1d-983d-cf1512b9cac4&skoid=5c72dd08-68ae-4091-b4e1-40ccec0693ae&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-23T10%3A18%3A35Z&ske=2025-07-24T10%3A18%3A35Z&sks=b&skv=2024-08-04&sig=D1xk1oFsyxsfuJIgV2vJX8CaIqKzFEYWysnnCg8B3sc%3D" alt={`Item 3`} width={300} height={300} className="mx-auto mb-4" />
+            <h4 className="text-xl font-semibold">Item 3</h4>
+            <p className="text-gray-600">Short description here.</p>
+            <p className="mt-2 font-bold">$15.00</p>
+          </div>
+
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* Events Section */}
+      <section id="events" className="bg-gray-100 py-16 px-6">
+        <h3 className="text-3xl font-bold mb-6 text-center">Upcoming Pop-Ups</h3>
+        <ul className="max-w-xl mx-auto space-y-4 text-center">
+          <li>🌟 July 27 - Cleveland Flea Market</li>
+          <li>🌟 August 10 - Akron Handmade Fair</li>
+          <li>🌟 August 24 - Lakewood Art Walk</li>
+        </ul>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-16 px-6">
+        <h3 className="text-3xl font-bold mb-4 text-center">Our Story</h3>
+        <p className="max-w-2xl mx-auto text-center text-gray-700">
+          PopUp Trinkets started as a weekend hobby and quickly grew into a traveling celebration of craft, color, and community. Every item is handmade, unique, and filled with personality.
+        </p>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="bg-amber-100 py-16 px-6">
+        <h3 className="text-3xl font-bold mb-4 text-center">Stay in Touch</h3>
+        <p className="text-center text-gray-700 mb-6">Follow us on socials or email us at <a href="mailto:popuptrinkets@example.com" className="underline">popuptrinkets@example.com</a></p>
+        <div className="text-center space-x-4">
+          <a href="#" className="text-lg font-semibold hover:underline">Instagram</a>
+          <a href="#" className="text-lg font-semibold hover:underline">Facebook</a>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="text-center py-6 text-sm text-gray-500 border-t">
+        © {new Date().getFullYear()} PopUp Trinkets. All rights reserved.
       </footer>
-    </div>
+    </main>
   );
 }
+
