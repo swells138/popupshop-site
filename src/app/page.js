@@ -28,19 +28,19 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8">
 
           <div className="border rounded-lg shadow p-4 text-center">
-            <Image src="https://sdmntpreastus.oaiusercontent.com/files/00000000-601c-61f9-807e-e1aaddd12a97/raw?se=2025-07-23T15%3A42%3A48Z&sp=r&sv=2024-08-04&sr=b&scid=70024f8c-e341-5ac8-8fdd-73d742d28b08&skoid=5c72dd08-68ae-4091-b4e1-40ccec0693ae&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-22T23%3A28%3A37Z&ske=2025-07-23T23%3A28%3A37Z&sks=b&skv=2024-08-04&sig=O0Wp54vMaz%2B24E6TF99lTEjFaQcjvf5arj5zNAXogSg%3D" alt={`Item 1`} width={300} height={300} className="mx-auto mb-4" />
+            <Image src="/item1.svg" alt={`Item 1`} width={300} height={300} className="mx-auto mb-4" />
             <h4 className="text-xl font-semibold">Item 1</h4>
             <p className="text-gray-600">Short description here.</p>
             <p className="mt-2 font-bold">$15.00</p>
           </div>
           <div className="border rounded-lg shadow p-4 text-center">
-            <Image src="https://sdmntpraustraliaeast.oaiusercontent.com/files/00000000-75b8-61fa-bf03-a74749dcc6ab/raw?se=2025-07-23T15%3A35%3A56Z&sp=r&sv=2024-08-04&sr=b&scid=0425c67a-f8ff-51a8-96ba-2d60bcbede4d&skoid=5c72dd08-68ae-4091-b4e1-40ccec0693ae&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-22T23%3A12%3A51Z&ske=2025-07-23T23%3A12%3A51Z&sks=b&skv=2024-08-04&sig=%2BCf7ON3eQ3/C8hTgGqMp27/VoVZm4dyKdSATAGQve/g%3D" alt={`Item 2`} width={300} height={300} className="mx-auto mb-4" />
+            <Image src="/item2.svg" alt={`Item 2`} width={300} height={300} className="mx-auto mb-4" />
             <h4 className="text-xl font-semibold">Item 2</h4>
             <p className="text-gray-600">Short description here.</p>
             <p className="mt-2 font-bold">$15.00</p>
           </div>
           <div className="border rounded-lg shadow p-4 text-center">
-            <Image src="https://sdmntprpolandcentral.oaiusercontent.com/files/00000000-dc28-620a-9bb2-2c79115d4b9a/raw?se=2025-07-23T15%3A47%3A57Z&sp=r&sv=2024-08-04&sr=b&scid=e9993857-950e-5c1d-983d-cf1512b9cac4&skoid=5c72dd08-68ae-4091-b4e1-40ccec0693ae&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-23T10%3A18%3A35Z&ske=2025-07-24T10%3A18%3A35Z&sks=b&skv=2024-08-04&sig=D1xk1oFsyxsfuJIgV2vJX8CaIqKzFEYWysnnCg8B3sc%3D" alt={`Item 3`} width={300} height={300} className="mx-auto mb-4" />
+            <Image src="/item3.svg" alt={`Item 3`} width={300} height={300} className="mx-auto mb-4" />
             <h4 className="text-xl font-semibold">Item 3</h4>
             <p className="text-gray-600">Short description here.</p>
             <p className="mt-2 font-bold">$15.00</p>
