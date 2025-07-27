@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProductCard({ image, name, description, price }) {
   return (
-    <div className="border rounded-lg shadow p-4 flex flex-col items-center text-center">
+    <div className="border border-teal-200 rounded-lg shadow p-4 flex flex-col items-center text-center bg-white">
       <Image
         src={image}
         alt={name}
