@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import ProductCard from "./components/ProductCard";
 
 export default function Home() {
   return (
@@ -26,26 +26,34 @@ export default function Home() {
       <section id="shop" className="py-16 px-6">
         <h3 className="text-3xl font-bold mb-8 text-center">Featured Items</h3>
         <div className="grid md:grid-cols-3 gap-8">
-
-          <div className="border rounded-lg shadow p-4 text-center">
-            <Image src="/images/table1.png" alt={`Item 1`} width={300} height={300} className="mx-auto mb-4" />
-            <h4 className="text-xl font-semibold">Item 1</h4>
-            <p className="text-gray-600">Short description here.</p>
-            <p className="mt-2 font-bold">$15.00</p>
-          </div>
-          <div className="border rounded-lg shadow p-4 text-center">
-            <Image src="/images/table2.png" alt={`Item 2`} width={300} height={300} className="mx-auto mb-4" />
-            <h4 className="text-xl font-semibold">Item 2</h4>
-            <p className="text-gray-600">Short description here.</p>
-            <p className="mt-2 font-bold">$15.00</p>
-          </div>
-          <div className="border rounded-lg shadow p-4 text-center">
-            <Image src="/images/table3.png" alt={`Item 3`} width={300} height={300} className="mx-auto mb-4" />
-            <h4 className="text-xl font-semibold">Item 3</h4>
-            <p className="text-gray-600">Short description here.</p>
-            <p className="mt-2 font-bold">$15.00</p>
-          </div>
-
+          {[
+            {
+              image: "/images/table1.png",
+              name: "Item 1",
+              description: "Short description here.",
+              price: "$15.00",
+            },
+            {
+              image: "/images/table2.png",
+              name: "Item 2",
+              description: "Short description here.",
+              price: "$15.00",
+            },
+            {
+              image: "/images/table3.png",
+              name: "Item 3",
+              description: "Short description here.",
+              price: "$15.00",
+            },
+          ].map((product) => (
+            <ProductCard
+              key={product.name}
+              image={product.image}
+              name={product.name}
+              description={product.description}
+              price={product.price}
+            />
+          ))}
         </div>
       </section>
 
