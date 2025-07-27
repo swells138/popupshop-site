@@ -28,19 +28,19 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8">
 
           <div className="border rounded-lg shadow p-4 text-center">
-            <Image src="/item1.svg" alt={`Item 1`} width={300} height={300} className="mx-auto mb-4" />
+            <Image src="/images/table1.png" alt={`Item 1`} width={300} height={300} className="mx-auto mb-4" />
             <h4 className="text-xl font-semibold">Item 1</h4>
             <p className="text-gray-600">Short description here.</p>
             <p className="mt-2 font-bold">$15.00</p>
           </div>
           <div className="border rounded-lg shadow p-4 text-center">
-            <Image src="/item2.svg" alt={`Item 2`} width={300} height={300} className="mx-auto mb-4" />
+            <Image src="/images/table2.png" alt={`Item 2`} width={300} height={300} className="mx-auto mb-4" />
             <h4 className="text-xl font-semibold">Item 2</h4>
             <p className="text-gray-600">Short description here.</p>
             <p className="mt-2 font-bold">$15.00</p>
           </div>
           <div className="border rounded-lg shadow p-4 text-center">
-            <Image src="/item3.svg" alt={`Item 3`} width={300} height={300} className="mx-auto mb-4" />
+            <Image src="/images/table3.png" alt={`Item 3`} width={300} height={300} className="mx-auto mb-4" />
             <h4 className="text-xl font-semibold">Item 3</h4>
             <p className="text-gray-600">Short description here.</p>
             <p className="mt-2 font-bold">$15.00</p>
