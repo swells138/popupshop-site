@@ -1,5 +1,7 @@
 import Link from "next/link";
-import ProductCard from "./components/ProductCard";
+import Image from "next/image";
+// (remove ProductCard import unless you actually use it)
+
 
 // --- Data (swap with real items later) ---
 const products = [
